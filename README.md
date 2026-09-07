@@ -109,6 +109,7 @@ Once records are committed, use the **Inventory** tab (in the app's left-hand na
 - Coverage (how much of a scrolled inventory is actually captured) and duplicate/multiplicity handling are still being validated against real gameplay.
 - Unusual game UI layouts may require additional calibration or a dedicated profile.
 - OCRing does not currently guarantee complete inventory capture.
+- OCRing is not yet considered fully production-tested. Real-world testing is still ongoing. If you encounter a bug or inaccurate result, please open a GitHub Issue so it can be investigated and fixed.
 
 A real Defiance recording (approximately 50 mods scrolled) was used for replay validation. The current temporal-identity-aware assembly, run against that same preserved recording, produced:
 
@@ -120,6 +121,26 @@ A real Defiance recording (approximately 50 mods scrolled) was used for replay v
 ```
 
 These numbers are not yet considered final inventory-accuracy proof. Further validation against real gameplay is still in progress to measure true capture coverage, duplicate/over-fragmented records, multiplicity accuracy, practical scroll speed, and false positive/negative rates.
+
+## Testing Status
+
+OCRing is currently in active development and has not been fully tested across all games, hardware setups, screen layouts, or inventory styles.
+
+Bugs, incorrect OCR results, missed items, duplicate records, UI issues, and unexpected behavior may still occur.
+
+If you find a bug, please report it through the [GitHub Issues](https://github.com/davimious-jpg/OCRing/issues) page so it can be reproduced and fixed.
+
+When reporting a bug, include:
+
+- Windows version
+- game/profile being used
+- what you were doing when the problem occurred
+- what you expected to happen
+- what actually happened
+- screenshots if useful
+- console/error output if available
+
+Do not include passwords, account credentials, private tokens, or sensitive personal information in bug reports.
 
 ## Safety
 
