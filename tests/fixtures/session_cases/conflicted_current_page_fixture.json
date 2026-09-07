@@ -1,0 +1,92 @@
+{
+  "fixture_id": "conflicted-current-page",
+  "profile_id": "defiance",
+  "scan_scope": "current_page",
+  "expected": {
+    "completeness_state": "review_required",
+    "continuity_state": "collided",
+    "contradiction_code": "CONTINUITY_CONFLICT"
+  },
+  "frames": [
+    {
+      "image_path": "conflict_frame_01.pgm",
+      "frame_id": "conflict-frame-001",
+      "session_id": "conflict-session",
+      "timestamp_utc": "2026-08-15T03:10:00+00:00",
+      "ranked_candidates": [
+        {
+          "row_id": "conflict-frame-001:row:2",
+          "field_kind": "item_name",
+          "candidate_value": "Hellbug Rocket",
+          "source_crop_id": "conflict-1-name",
+          "decision": "selected",
+          "confidence": 0.90
+        },
+        {
+          "row_id": "conflict-frame-001:row:2",
+          "field_kind": "item_rarity",
+          "candidate_value": "Tier IV",
+          "source_crop_id": "conflict-1-rarity",
+          "decision": "selected",
+          "confidence": 0.87
+        },
+        {
+          "row_id": "conflict-frame-001:row:2",
+          "field_kind": "item_count",
+          "candidate_value": "1",
+          "source_crop_id": "conflict-1-count",
+          "decision": "selected",
+          "confidence": 0.82
+        },
+        {
+          "row_id": "conflict-frame-001:row:2",
+          "field_kind": "item_type",
+          "candidate_value": "Rocket Launcher",
+          "source_crop_id": "conflict-1-type",
+          "decision": "selected",
+          "confidence": 0.91
+        }
+      ]
+    },
+    {
+      "image_path": "conflict_frame_02.pgm",
+      "frame_id": "conflict-frame-002",
+      "session_id": "conflict-session",
+      "timestamp_utc": "2026-08-15T03:10:01+00:00",
+      "ranked_candidates": [
+        {
+          "row_id": "conflict-frame-002:row:2",
+          "field_kind": "item_name",
+          "candidate_value": "Hellbug Rocket",
+          "source_crop_id": "conflict-2-name",
+          "decision": "selected",
+          "confidence": 0.91
+        },
+        {
+          "row_id": "conflict-frame-002:row:2",
+          "field_kind": "item_rarity",
+          "candidate_value": "Tier IV",
+          "source_crop_id": "conflict-2-rarity",
+          "decision": "selected",
+          "confidence": 0.88
+        },
+        {
+          "row_id": "conflict-frame-002:row:2",
+          "field_kind": "item_count",
+          "candidate_value": "1",
+          "source_crop_id": "conflict-2-count",
+          "decision": "selected",
+          "confidence": 0.83
+        },
+        {
+          "row_id": "conflict-frame-002:row:2",
+          "field_kind": "item_type",
+          "candidate_value": "Shotgun",
+          "source_crop_id": "conflict-2-type",
+          "decision": "selected",
+          "confidence": 0.89
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "fixture_id": "live-ocr-probe",
+  "profile_id": "defiance",
+  "scan_scope": "current_page",
+  "frames": [
+    {
+      "image_path": "live_ocr_probe_frame_01.pgm",
+      "frame_id": "live-frame-001",
+      "session_id": "live-ocr-session",
+      "timestamp_utc": "2026-08-15T04:00:00+00:00",
+      "replay_mode": "live_ocr"
+    }
+  ]
+}

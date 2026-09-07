@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocring"
+version = "1.0.0"
+description = "Windows-first external inventory OCR companion prototype"
+requires-python = ">=3.11"
+dependencies = [
+    "keyboard==0.13.5",
+    "Pillow==10.4.0",
+    "psutil==6.0.0",
+    "pytesseract==0.3.13",
+]
+
+[project.scripts]
+ocring = "ocring.cli:main"
+
+[project.optional-dependencies]
+build = [
+    "pyinstaller==6.10.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,145 @@
+{
+  "profile_id": "defiance",
+  "scan_scope": "current_page",
+  "completeness_state": "page_complete",
+  "completeness_reason": "current_page_scope",
+  "continuity_records": [
+    {
+      "state": "stable",
+      "support_count": 2,
+      "fields": {
+        "item_count": "2",
+        "item_name": "Power Bore",
+        "item_rarity": "Tier IV",
+        "item_type": "Rocket Launcher"
+      }
+    }
+  ],
+  "assembled_records": [
+    {
+      "row_slot": 1,
+      "state": "complete",
+      "fields": {
+        "item_count": "2",
+        "item_name": "Power Bore",
+        "item_rarity": "Tier IV",
+        "item_type": "Rocket Launcher"
+      },
+      "missing_fields": [],
+      "support_summary": {
+        "item_count": {
+          "support_state": "supported",
+          "support_count": 2,
+          "independent_support_count": 2,
+          "best_confidence": 0.85,
+          "frame_hint": "stable-frame-001",
+          "source_frame_ids": [
+            "stable-frame-001",
+            "stable-frame-002"
+          ],
+          "source_row_ids": [
+            "stable-frame-001:row:1",
+            "stable-frame-002:row:1"
+          ],
+          "source_crop_ids": [
+            "stable-1-count",
+            "stable-2-count"
+          ],
+          "text_quality_state": "",
+          "text_quality_score": 0.0,
+          "text_quality_reasons": []
+        },
+        "item_name": {
+          "support_state": "supported",
+          "support_count": 2,
+          "independent_support_count": 2,
+          "best_confidence": 0.92,
+          "frame_hint": "stable-frame-001",
+          "source_frame_ids": [
+            "stable-frame-001",
+            "stable-frame-002"
+          ],
+          "source_row_ids": [
+            "stable-frame-001:row:1",
+            "stable-frame-002:row:1"
+          ],
+          "source_crop_ids": [
+            "stable-1-name",
+            "stable-2-name"
+          ],
+          "text_quality_state": "AUTO_STORE_TRUSTWORTHY",
+          "text_quality_score": 0.97,
+          "text_quality_reasons": []
+        },
+        "item_rarity": {
+          "support_state": "supported",
+          "support_count": 2,
+          "independent_support_count": 2,
+          "best_confidence": 0.89,
+          "frame_hint": "stable-frame-001",
+          "source_frame_ids": [
+            "stable-frame-001",
+            "stable-frame-002"
+          ],
+          "source_row_ids": [
+            "stable-frame-001:row:1",
+            "stable-frame-002:row:1"
+          ],
+          "source_crop_ids": [
+            "stable-1-rarity",
+            "stable-2-rarity"
+          ],
+          "text_quality_state": "",
+          "text_quality_score": 0.0,
+          "text_quality_reasons": []
+        },
+        "item_type": {
+          "support_state": "supported",
+          "support_count": 2,
+          "independent_support_count": 2,
+          "best_confidence": 0.93,
+          "frame_hint": "stable-frame-001",
+          "source_frame_ids": [
+            "stable-frame-001",
+            "stable-frame-002"
+          ],
+          "source_row_ids": [
+            "stable-frame-001:row:1",
+            "stable-frame-002:row:1"
+          ],
+          "source_crop_ids": [
+            "stable-1-type",
+            "stable-2-type"
+          ],
+          "text_quality_state": "",
+          "text_quality_score": 0.0,
+          "text_quality_reasons": []
+        }
+      }
+    }
+  ],
+  "locked_fields": [
+    {
+      "field_kind": "item_name",
+      "candidate_value": "Power Bore",
+      "lock_state": "locked"
+    },
+    {
+      "field_kind": "item_rarity",
+      "candidate_value": "Tier IV",
+      "lock_state": "locked"
+    },
+    {
+      "field_kind": "item_count",
+      "candidate_value": "2",
+      "lock_state": "locked"
+    },
+    {
+      "field_kind": "item_type",
+      "candidate_value": "Rocket Launcher",
+      "lock_state": "locked"
+    }
+  ],
+  "review_required_fields": [],
+  "contradictions": []
+}

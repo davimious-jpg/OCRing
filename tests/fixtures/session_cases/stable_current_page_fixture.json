@@ -1,0 +1,92 @@
+{
+  "fixture_id": "stable-current-page",
+  "profile_id": "defiance",
+  "scan_scope": "current_page",
+  "expected": {
+    "completeness_state": "page_complete",
+    "continuity_state": "stable",
+    "support_count": 2
+  },
+  "frames": [
+    {
+      "image_path": "stable_frame_01.pgm",
+      "frame_id": "stable-frame-001",
+      "session_id": "stable-session",
+      "timestamp_utc": "2026-08-15T03:00:00+00:00",
+      "ranked_candidates": [
+        {
+          "row_id": "stable-frame-001:row:1",
+          "field_kind": "item_name",
+          "candidate_value": "Power Bore",
+          "source_crop_id": "stable-1-name",
+          "decision": "selected",
+          "confidence": 0.90
+        },
+        {
+          "row_id": "stable-frame-001:row:1",
+          "field_kind": "item_rarity",
+          "candidate_value": "Tier IV",
+          "source_crop_id": "stable-1-rarity",
+          "decision": "selected",
+          "confidence": 0.88
+        },
+        {
+          "row_id": "stable-frame-001:row:1",
+          "field_kind": "item_count",
+          "candidate_value": "2",
+          "source_crop_id": "stable-1-count",
+          "decision": "selected",
+          "confidence": 0.84
+        },
+        {
+          "row_id": "stable-frame-001:row:1",
+          "field_kind": "item_type",
+          "candidate_value": "Rocket Launcher",
+          "source_crop_id": "stable-1-type",
+          "decision": "selected",
+          "confidence": 0.91
+        }
+      ]
+    },
+    {
+      "image_path": "stable_frame_02.pgm",
+      "frame_id": "stable-frame-002",
+      "session_id": "stable-session",
+      "timestamp_utc": "2026-08-15T03:00:01+00:00",
+      "ranked_candidates": [
+        {
+          "row_id": "stable-frame-002:row:1",
+          "field_kind": "item_name",
+          "candidate_value": "Power Bore",
+          "source_crop_id": "stable-2-name",
+          "decision": "selected",
+          "confidence": 0.92
+        },
+        {
+          "row_id": "stable-frame-002:row:1",
+          "field_kind": "item_rarity",
+          "candidate_value": "Tier IV",
+          "source_crop_id": "stable-2-rarity",
+          "decision": "selected",
+          "confidence": 0.89
+        },
+        {
+          "row_id": "stable-frame-002:row:1",
+          "field_kind": "item_count",
+          "candidate_value": "2",
+          "source_crop_id": "stable-2-count",
+          "decision": "selected",
+          "confidence": 0.85
+        },
+        {
+          "row_id": "stable-frame-002:row:1",
+          "field_kind": "item_type",
+          "candidate_value": "Rocket Launcher",
+          "source_crop_id": "stable-2-type",
+          "decision": "selected",
+          "confidence": 0.93
+        }
+      ]
+    }
+  ]
+}

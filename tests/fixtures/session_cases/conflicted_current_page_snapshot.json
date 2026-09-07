@@ -1,0 +1,317 @@
+{
+  "profile_id": "defiance",
+  "scan_scope": "current_page",
+  "completeness_state": "review_required",
+  "completeness_reason": "review_required_fields_present",
+  "continuity_records": [
+    {
+      "state": "collided",
+      "support_count": 2,
+      "fields": {
+        "item_count": "1",
+        "item_name": "Hellbug Rocket",
+        "item_rarity": "Tier IV",
+        "item_type": "Rocket Launcher"
+      }
+    }
+  ],
+  "assembled_records": [
+    {
+      "row_slot": 2,
+      "state": "conflicted",
+      "fields": {
+        "item_count": "1",
+        "item_name": "Hellbug Rocket",
+        "item_rarity": "Tier IV",
+        "item_type": "Rocket Launcher"
+      },
+      "missing_fields": [],
+      "support_summary": {
+        "item_count": {
+          "support_state": "supported",
+          "support_count": 2,
+          "independent_support_count": 2,
+          "best_confidence": 0.83,
+          "frame_hint": "conflict-frame-001",
+          "source_frame_ids": [
+            "conflict-frame-001",
+            "conflict-frame-002"
+          ],
+          "source_row_ids": [
+            "conflict-frame-001:row:2",
+            "conflict-frame-002:row:2"
+          ],
+          "source_crop_ids": [
+            "conflict-1-count",
+            "conflict-2-count"
+          ],
+          "text_quality_state": "",
+          "text_quality_score": 0.0,
+          "text_quality_reasons": []
+        },
+        "item_name": {
+          "support_state": "supported",
+          "support_count": 2,
+          "independent_support_count": 2,
+          "best_confidence": 0.91,
+          "frame_hint": "conflict-frame-001",
+          "source_frame_ids": [
+            "conflict-frame-001",
+            "conflict-frame-002"
+          ],
+          "source_row_ids": [
+            "conflict-frame-001:row:2",
+            "conflict-frame-002:row:2"
+          ],
+          "source_crop_ids": [
+            "conflict-1-name",
+            "conflict-2-name"
+          ],
+          "text_quality_state": "AUTO_STORE_TRUSTWORTHY",
+          "text_quality_score": 0.9683333333333334,
+          "text_quality_reasons": []
+        },
+        "item_rarity": {
+          "support_state": "supported",
+          "support_count": 2,
+          "independent_support_count": 2,
+          "best_confidence": 0.88,
+          "frame_hint": "conflict-frame-001",
+          "source_frame_ids": [
+            "conflict-frame-001",
+            "conflict-frame-002"
+          ],
+          "source_row_ids": [
+            "conflict-frame-001:row:2",
+            "conflict-frame-002:row:2"
+          ],
+          "source_crop_ids": [
+            "conflict-1-rarity",
+            "conflict-2-rarity"
+          ],
+          "text_quality_state": "",
+          "text_quality_score": 0.0,
+          "text_quality_reasons": []
+        },
+        "item_type": {
+          "support_state": "conflicted",
+          "support_count": 1,
+          "independent_support_count": 1,
+          "best_confidence": 0.91,
+          "frame_hint": "conflict-frame-001",
+          "source_frame_ids": [
+            "conflict-frame-001"
+          ],
+          "source_row_ids": [
+            "conflict-frame-001:row:2"
+          ],
+          "source_crop_ids": [
+            "conflict-1-type"
+          ],
+          "text_quality_state": "",
+          "text_quality_score": 0.0,
+          "text_quality_reasons": []
+        }
+      }
+    }
+  ],
+  "locked_fields": [],
+  "review_required_fields": [
+    {
+      "field_kind": "item_name",
+      "candidate_value": "Hellbug Rocket",
+      "lock_state": "blocked_by_conflict",
+      "provenance": {
+        "candidate_value": "Hellbug Rocket",
+        "source_frame_ids": [
+          "conflict-frame-001",
+          "conflict-frame-002"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2",
+          "conflict-frame-002:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-name",
+          "conflict-2-name"
+        ],
+        "best_confidence": 0.91,
+        "support_count": 2,
+        "independent_support_count": 2
+      },
+      "reasons": [
+        "CONTINUITY_CONFLICT",
+        "SOURCE_RECORD_CONFLICTED"
+      ]
+    },
+    {
+      "field_kind": "item_rarity",
+      "candidate_value": "Tier IV",
+      "lock_state": "blocked_by_conflict",
+      "provenance": {
+        "candidate_value": "Tier IV",
+        "source_frame_ids": [
+          "conflict-frame-001",
+          "conflict-frame-002"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2",
+          "conflict-frame-002:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-rarity",
+          "conflict-2-rarity"
+        ],
+        "best_confidence": 0.88,
+        "support_count": 2,
+        "independent_support_count": 2
+      },
+      "reasons": [
+        "CONTINUITY_CONFLICT",
+        "SOURCE_RECORD_CONFLICTED"
+      ]
+    },
+    {
+      "field_kind": "item_count",
+      "candidate_value": "1",
+      "lock_state": "blocked_by_conflict",
+      "provenance": {
+        "candidate_value": "1",
+        "source_frame_ids": [
+          "conflict-frame-001",
+          "conflict-frame-002"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2",
+          "conflict-frame-002:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-count",
+          "conflict-2-count"
+        ],
+        "best_confidence": 0.83,
+        "support_count": 2,
+        "independent_support_count": 2
+      },
+      "reasons": [
+        "CONTINUITY_CONFLICT",
+        "SOURCE_RECORD_CONFLICTED"
+      ]
+    },
+    {
+      "field_kind": "item_type",
+      "candidate_value": "Rocket Launcher",
+      "lock_state": "blocked_by_conflict",
+      "provenance": {
+        "candidate_value": "Rocket Launcher",
+        "source_frame_ids": [
+          "conflict-frame-001"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-type"
+        ],
+        "best_confidence": 0.91,
+        "support_count": 1,
+        "independent_support_count": 1
+      },
+      "reasons": [
+        "CONTINUITY_CONFLICT",
+        "SOURCE_RECORD_CONFLICTED"
+      ]
+    }
+  ],
+  "contradictions": [
+    {
+      "field_kind": "item_name",
+      "candidate_value": "Hellbug Rocket",
+      "contradiction_code": "CONTINUITY_CONFLICT",
+      "provenance": {
+        "candidate_value": "Hellbug Rocket",
+        "source_frame_ids": [
+          "conflict-frame-001",
+          "conflict-frame-002"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2",
+          "conflict-frame-002:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-name",
+          "conflict-2-name"
+        ],
+        "best_confidence": 0.91,
+        "support_count": 2,
+        "independent_support_count": 2
+      }
+    },
+    {
+      "field_kind": "item_rarity",
+      "candidate_value": "Tier IV",
+      "contradiction_code": "CONTINUITY_CONFLICT",
+      "provenance": {
+        "candidate_value": "Tier IV",
+        "source_frame_ids": [
+          "conflict-frame-001",
+          "conflict-frame-002"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2",
+          "conflict-frame-002:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-rarity",
+          "conflict-2-rarity"
+        ],
+        "best_confidence": 0.88,
+        "support_count": 2,
+        "independent_support_count": 2
+      }
+    },
+    {
+      "field_kind": "item_count",
+      "candidate_value": "1",
+      "contradiction_code": "CONTINUITY_CONFLICT",
+      "provenance": {
+        "candidate_value": "1",
+        "source_frame_ids": [
+          "conflict-frame-001",
+          "conflict-frame-002"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2",
+          "conflict-frame-002:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-count",
+          "conflict-2-count"
+        ],
+        "best_confidence": 0.83,
+        "support_count": 2,
+        "independent_support_count": 2
+      }
+    },
+    {
+      "field_kind": "item_type",
+      "candidate_value": "Rocket Launcher",
+      "contradiction_code": "CONTINUITY_CONFLICT",
+      "provenance": {
+        "candidate_value": "Rocket Launcher",
+        "source_frame_ids": [
+          "conflict-frame-001"
+        ],
+        "source_row_ids": [
+          "conflict-frame-001:row:2"
+        ],
+        "source_crop_ids": [
+          "conflict-1-type"
+        ],
+        "best_confidence": 0.91,
+        "support_count": 1,
+        "independent_support_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "fixture_id": "live-ocr-scroll",
+  "profile_id": "defiance",
+  "scan_scope": "full_inventory",
+  "frames": [
+    {
+      "image_path": "stable_frame_01.pgm",
+      "frame_id": "live-scroll-frame-001",
+      "session_id": "live-scroll-session",
+      "timestamp_utc": "2026-08-15T04:10:00+00:00",
+      "replay_mode": "live_ocr"
+    },
+    {
+      "image_path": "stable_frame_02.pgm",
+      "frame_id": "live-scroll-frame-002",
+      "session_id": "live-scroll-session",
+      "timestamp_utc": "2026-08-15T04:10:01+00:00",
+      "replay_mode": "live_ocr"
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "compatibility_rules": [
+    {
+      "screen_class": "inventory",
+      "supports_counts": true,
+      "supports_rarity": true
+    }
+  ],
+  "field_aliases": {
+    "item_count": {
+      "qty": "Qty:"
+    },
+    "item_rarity": {
+      "epic": "Tier IV",
+      "legendary": "Tier V"
+    }
+  },
+  "field_patterns": {
+    "item_count": [
+      "x{number}",
+      "{number}x",
+      "Quantity: {number}",
+      "Qty: {number}"
+    ]
+  },
+  "inventory_definitions": [
+    {
+      "canonical_id": "item_name",
+      "extraction_source": "ocr.item_name",
+      "label": "Item Name",
+      "required": true
+    },
+    {
+      "canonical_id": "item_rarity",
+      "extraction_source": "ocr.item_rarity",
+      "label": "Item Rarity",
+      "required": true
+    },
+    {
+      "canonical_id": "item_type",
+      "extraction_source": "ocr.item_type",
+      "label": "Item Type",
+      "required": true
+    },
+    {
+      "canonical_id": "item_count",
+      "extraction_source": "ocr.item_count",
+      "label": "Item Count",
+      "required": false
+    }
+  ],
+  "mod_slot_compatibility": {
+    "barrel": [
+      "assault_rifle",
+      "battle_rifle",
+      "submachine_gun",
+      "light_machine_gun",
+      "shotgun",
+      "sniper_rifle",
+      "pistol"
+    ],
+    "magazine": [
+      "assault_rifle",
+      "battle_rifle",
+      "submachine_gun",
+      "light_machine_gun",
+      "shotgun",
+      "sniper_rifle",
+      "pistol"
+    ],
+    "scope": [
+      "assault_rifle",
+      "battle_rifle",
+      "submachine_gun",
+      "light_machine_gun",
+      "shotgun",
+      "sniper_rifle"
+    ],
+    "scope_unsupported": [
+      "grenade_launcher",
+      "infector"
+    ],
+    "stock": [
+      "assault_rifle",
+      "battle_rifle",
+      "submachine_gun",
+      "light_machine_gun",
+      "shotgun",
+      "sniper_rifle",
+      "pistol"
+    ]
+  },
+  "parsing_rules": {
+    "count_pattern": "\\d+",
+    "normalize_whitespace": true
+  },
+  "profile_id": "defiance",
+  "profile_name": "Defiance",
+  "rarity_definitions": {
+    "Tier I": {
+      "color_hex": "#9e9e9e",
+      "color_name": "Gray",
+      "label": "Common"
+    },
+    "Tier II": {
+      "color_hex": "#4caf50",
+      "color_name": "Green",
+      "label": "Uncommon"
+    },
+    "Tier III": {
+      "color_hex": "#2196f3",
+      "color_name": "Blue",
+      "label": "Rare"
+    },
+    "Tier IV": {
+      "color_hex": "#9c27b0",
+      "color_name": "Purple",
+      "label": "Epic"
+    },
+    "Tier V": {
+      "color_hex": "#ff9800",
+      "color_name": "Orange",
+      "label": "Legendary"
+    }
+  },
+  "rarity_rules": [
+    {
+      "color": "#9e9e9e",
+      "name": "Common",
+      "tier": "Tier I"
+    },
+    {
+      "color": "#4caf50",
+      "name": "Uncommon",
+      "tier": "Tier II"
+    },
+    {
+      "color": "#2196f3",
+      "name": "Rare",
+      "tier": "Tier III"
+    },
+    {
+      "color": "#9c27b0",
+      "name": "Epic",
+      "tier": "Tier IV"
+    },
+    {
+      "color": "#ff9800",
+      "name": "Legendary",
+      "tier": "Tier V"
+    }
+  ],
+  "record_definitions": [
+    {
+      "fields": [
+        {
+          "field_name": "item_name",
+          "required": true,
+          "sources": [
+            "visible_text",
+            "dictionary_match",
+            "AI_reconstruction"
+          ]
+        },
+        {
+          "allowed_values": [
+            "Tier I",
+            "Tier II",
+            "Tier III",
+            "Tier IV",
+            "Tier V"
+          ],
+          "field_name": "item_rarity",
+          "required": true,
+          "sources": [
+            "visible_text",
+            "color",
+            "roman_numeral"
+          ]
+        },
+        {
+          "allowed_values": [
+            "Assault Rifle",
+            "Battle Rifle",
+            "Submachine Gun",
+            "Light Machine Gun",
+            "Shotgun",
+            "Sniper Rifle",
+            "Pistol",
+            "Rocket Launcher",
+            "Detonator",
+            "Infector",
+            "Grenade Launcher"
+          ],
+          "field_name": "item_type",
+          "required": true,
+          "sources": [
+            "visible_text",
+            "dictionary_match"
+          ]
+        },
+        {
+          "default": "1",
+          "default_status": "DEFAULTED",
+          "field_name": "item_count",
+          "patterns": [
+            "x{number}",
+            "{number}x",
+            "Quantity: {number}",
+            "Qty: {number}"
+          ],
+          "required": false,
+          "sources": [
+            "visible_text",
+            "regex"
+          ]
+        },
+        {
+          "field_name": "item_synergy",
+          "required": false,
+          "sources": [
+            "visible_text",
+            "dictionary_match",
+            "AI_reconstruction"
+          ]
+        }
+      ],
+      "record_class": "Weapon"
+    },
+    {
+      "fields": [
+        {
+          "field_name": "item_name",
+          "required": true,
+          "sources": [
+            "visible_text",
+            "dictionary_match",
+            "AI_reconstruction"
+          ]
+        },
+        {
+          "allowed_values": [
+            "Stock",
+            "Barrel",
+            "Magazine",
+            "Scope"
+          ],
+          "field_name": "mod_slot",
+          "required": false,
+          "sources": [
+            "visible_text",
+            "dictionary_match"
+          ]
+        }
+      ],
+      "record_class": "WeaponMod"
+    }
+  ],
+  "screens": [
+    {
+      "field_regions": {
+        "item_name_region": {
+          "x1": 0.16,
+          "x2": 0.63,
+          "y1": 0.2,
+          "y2": 0.8
+        },
+        "rarity_color_region": {
+          "x1": 0.16,
+          "x2": 0.63,
+          "y1": 0.2,
+          "y2": 0.8
+        }
+      },
+      "roi": {
+        "x1": 72,
+        "x2": 1380,
+        "y1": 88,
+        "y2": 920
+      },
+      "rows": 11,
+      "screen_class": "inventory",
+      "selected_detail_panel_region_space": "frame",
+      "selected_detail_panel_regions": {
+        "detail_rarity_region": {
+          "x1": 0.527,
+          "x2": 0.717,
+          "y1": 0.112,
+          "y2": 0.182
+        },
+        "detail_synergy_region": {
+          "x1": 0.527,
+          "x2": 0.663,
+          "y1": 0.543,
+          "y2": 0.576
+        },
+        "detail_title_region": {
+          "x1": 0.527,
+          "x2": 0.717,
+          "y1": 0.112,
+          "y2": 0.182
+        },
+        "detail_type_region": {
+          "x1": 0.677,
+          "x2": 0.721,
+          "y1": 0.318,
+          "y2": 0.344
+        }
+      },
+      "selected_detail_panel_layouts": {
+        "left_comparison_panel": {
+          "region_space": "frame",
+          "regions": {
+            "detail_rarity_region": {
+              "x1": 0.527,
+              "x2": 0.717,
+              "y1": 0.112,
+              "y2": 0.182
+            },
+            "detail_synergy_region": {
+              "x1": 0.527,
+              "x2": 0.663,
+              "y1": 0.543,
+              "y2": 0.576
+            },
+            "detail_title_region": {
+              "x1": 0.527,
+              "x2": 0.717,
+              "y1": 0.112,
+              "y2": 0.182
+            },
+            "detail_type_region": {
+              "x1": 0.677,
+              "x2": 0.721,
+              "y1": 0.318,
+              "y2": 0.344
+            }
+          }
+        },
+        "right_single_panel": {
+          "region_space": "frame",
+          "regions": {
+            "detail_rarity_region": {
+              "x1": 0.791,
+              "x2": 0.933,
+              "y1": 0.141,
+              "y2": 0.195
+            },
+            "detail_synergy_region": {
+              "x1": 0.754,
+              "x2": 0.947,
+              "y1": 0.544,
+              "y2": 0.594
+            },
+            "detail_title_region": {
+              "x1": 0.791,
+              "x2": 0.933,
+              "y1": 0.141,
+              "y2": 0.195
+            },
+            "detail_type_region": {
+              "x1": 0.889,
+              "x2": 0.943,
+              "y1": 0.315,
+              "y2": 0.349
+            }
+          }
+        }
+      }
+    }
+  ],
+  "version": "1.0"
+}
